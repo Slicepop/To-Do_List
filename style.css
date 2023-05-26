@@ -16,7 +16,7 @@
   .card{
     width: 80%;
     max-width: 850px;
-    background: whitesmoke;
+    background: linear-gradient(-155deg, rgb(188, 88, 255),rgb(36, 38, 167));
     color: #000000;
     margin: 100px auto 0;
     border-radius: 30px;
@@ -27,11 +27,13 @@
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    
-    margin: 30px;
-    outline-style: solid;
-    border: #d11e1e;
-    outline-color: #000000;
+  }
+  .addTaskButton{
+    border-radius: 50px;
+    background-color: #0ce6af;
+    scale: 1.3;
+    width: 25px;
+    height: 25px;
   }
   .taskOptions{
     margin: 30px;
