@@ -11,17 +11,21 @@
     background-size:auto;
     background-repeat: repeat-x;
     z-index: 2;
+    display: flex;
+    align-items: stretch;
   
   }
   .card{
+    position: relative;
+    z-index: 1;
     width: 80%;
     max-width: 850px;
     background: linear-gradient(-155deg, rgb(188, 88, 255),rgb(36, 38, 167));
     color: #000000;
     margin: 100px auto 0;
     border-radius: 30px;
-    padding: 40px 35px;
-    text-align: center;
+    padding: 20px 20px;
+    overflow: hidden;
   }
   .addTask{
     display: flex;
@@ -54,9 +58,29 @@
     outline-color: blue;
   }
   .addButton{
-    float: right;
     height: fit-content;
-    margin: 30px;
     outline-style: dotted; 
     outline-color: purple;
   }
+  .sidebar {
+    position: absolute;
+    padding: 30px;
+    max-width: 200px;
+    width: 90%;
+    top: 0;
+    bottom: 0;
+    left: -200px;
+    background: rgb(123, 57, 245);
+    outline-style: solid;
+    outline-width: 8px;
+    outline-color: rgba(0, 0, 0, 0.24);
+    opacity: 0; 
+    transition: opacity 1s ease, left 1s ease;
+  }
+  
+  .card.show-sidebar .sidebar {
+    left: 0;
+    opacity: 1; 
+  }
+  
+  
