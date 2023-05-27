@@ -12,20 +12,25 @@
     <div class="card">
         <button class="hiddenButton" onclick="toggleSidebar()"><i class="fa-solid fa-caret-down fa-rotate-270"></i></button>
         <div class="sidebar slide-in">
-            <button class="hiddenButton" onclick="toggleSidebar()"><i class="fa-solid fa-window-minimize"></i></button>
+            <button class="hiddenButton" onclick="toggleSidebar()"><i class="fa-solid fa-caret-down fa-rotate-90"></i></button>
         </div>
         <div class="addTask">
+            <i class="fa-solid fa-bookmark fa-rotate-90"></i>
             <div class="taskOptions">
-                <div class="taskTitle">
-                    <p>taskTitle</p>
-                </div>
-                <div class="taskColor">
-                    <p>taskColor</p>
-                </div>
+                
+                <input class="taskTitleInput" type="text" placeholder="Title">
+                    <select name="Colors" id="taskColorSelect" >
+                        <option value="black">Black</option>
+                        <option value="red">Red</option>
+                        <option value="orange">Orange</option>
+                        <option value="orange">Yellow</option>
+                        <option value="green">Green</option>
+                        <option value="blue">Blue</option>
+                        <option value="purple">Purple</option>
+                    </select>
             </div>
-            <div class="taskDescription">
-                <p>taskDescription</p>
-            </div> 
+            <textarea placeholder="Put notes here" name="Notes" id="notesArea" cols="1" rows="1" class="taskDescriptionTa"></textarea>
+            
             <button class="addTaskButton" id="addTaskButton" onclick="addTask()"><i class="fa-solid fa-plus fa-lg"></i></button>
 
         </div>

@@ -19,7 +19,7 @@
     position: relative;
     z-index: 1;
     width: 80%;
-    max-width: 550px;
+    max-width: 580px;
     background: linear-gradient(-155deg, rgb(188, 88, 255),rgb(36, 38, 167));
     color: #000000;
     margin: 100px auto 0;
@@ -28,34 +28,26 @@
     overflow: hidden;
   }
   .addTask{
+    margin: 10px;
+    padding: 10px;
+    outline-color: rgba(0, 0, 0, 0.404);
+    outline-style: solid;
     display: flex;
     justify-content: flex-end;
     align-items: center;
   }
   .addTaskButton{
+    margin-left: 20px;
     border-radius: 50px;
     background-color: #0ce6af;
     scale: 1.3;
     width: 25px;
     height: 25px;
   }
-  .taskOptions{
-    margin: 30px;
-    outline-style: solid;
-  }
-  .taskTitle{
-    margin: 30px;
-    outline-style: dotted;
-  }
-  .taskColor{
-    margin: 30px;
-    outline-style: dotted; 
-    outline-color: red;
-  }
+
   .taskDescription{
-    margin: 30px;
-    outline-style: dotted; 
-    outline-color: blue;
+    margin-right: 20px;
+    
   }
   .addButton{
     height: fit-content;
@@ -67,8 +59,9 @@
     flex-direction: column;
     align-items: flex-end;
     position: absolute;
-    padding: 30px;
+    padding: 20px 20px;
     max-width: 200px;
+    z-index: 2;
     width: 90%;
     top: 0;
     bottom: 0;
@@ -90,7 +83,37 @@
     border: none;
   }
   .fa-caret-down{
-    scale: 1.3;
+    scale: 1.5;
+    margin-top: 16px;
   }
-  
+ 
+  .taskDescriptionTa{
+    width: 250px;
+    height: 100px;
+    background-color: #5d36a773;
+    resize: vertical;
+    border-radius: 5px;
+  }
+ .taskTitleInput{
+    margin-bottom: 20px;
+    width: 100px;
+    background-color: #5d36a773;
+    resize: vertical;
+    border-radius: 5px;
+ }
+ .taskColorSelect{
+    width: 100px;
+ }
+ .taskOptions{
+    width: 100px;
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+ }
+ .fa-bookmark{
+    margin-right: 80px;
+    margin-bottom: 80px;
+ }
+ 
+
   
