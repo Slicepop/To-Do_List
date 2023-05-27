@@ -10,14 +10,11 @@
   </head>
   <body>
     <div class="card">
-        <div class="tesyt">
-            <div class="sidebar slide-in">
-                <p>sidebar</p>
-            </div>
+        <button class="hiddenButton" onclick="toggleSidebar()"><i class="fa-solid fa-caret-down fa-rotate-270"></i></button>
+        <div class="sidebar slide-in">
+            <button class="hiddenButton" onclick="toggleSidebar()"><i class="fa-solid fa-window-minimize"></i></button>
         </div>
-        
         <div class="addTask">
-            
             <div class="taskOptions">
                 <div class="taskTitle">
                     <p>taskTitle</p>
@@ -28,8 +25,8 @@
             </div>
             <div class="taskDescription">
                 <p>taskDescription</p>
-            </div>
-            <button class="addTaskButton" id="addTaskButton" onclick="toggleSidebar()"><i class="fa-solid fa-plus fa-lg"></i></button>
+            </div> 
+            <button class="addTaskButton" id="addTaskButton" onclick="addTask()"><i class="fa-solid fa-plus fa-lg"></i></button>
 
         </div>
     </div>
