@@ -69,4 +69,12 @@ function addTask() {
     colorSelect.selectedIndex = 0; // Reset to the first option
     changeColor();
   }
+  function opentask(document){
+    document.style.position = "absolute";
+    document.style.background = "white";
+    document.style.height = "450px";
+    document.style.width = "450px";
+
+
+  }
   

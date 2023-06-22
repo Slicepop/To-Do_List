@@ -12,11 +12,9 @@
     background-repeat: repeat-x;
     z-index: 2;
     display: flex;
-    align-items: stretch;
   
   }
   .card{
-    position: relative;
     z-index: 1;
     width: 80%;
     max-width: 580px;
@@ -110,10 +108,40 @@
     flex-direction: column;
     margin-right: 20px;
  }
- .fa-bookmark{
+ .addtaskBookmark{
     margin-right: 80px;
     margin-bottom: 80px;
  }
+.tasks{
+  margin: 10px;
+  padding: 10px;
+  outline-color: rgba(0, 0, 0, 0.404);
+  outline-style: solid;
+}
+.task{
+  width: 100px;
+  margin: 10px;
+  padding: 10px;
+  outline-color: rgba(82, 10, 85, 0.404);
+  outline-style: solid;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 2s;
+}
+.taskBookmark{
+  margin-bottom: 20px;
+}
+.taskContents{
+  display: grid;
+  place-items: center;
+  
+}
+
+.taskDots{
+  color: rgb(121, 92, 121);
+  font-size: 30px;
+  margin-top: 10px;
+}
 
 
   

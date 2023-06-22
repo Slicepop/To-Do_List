@@ -15,7 +15,7 @@
             <button class="hiddenButton" onclick="toggleSidebar()"><i class="fa-solid fa-caret-down fa-rotate-90"></i></button>
         </div>
         <div class="addTask">
-            <i class="fa-solid fa-bookmark fa-rotate-90" ></i> 
+            <i class="fa-solid fa-bookmark fa-rotate-90 addtaskBookmark" ></i> 
             <div class="taskOptions">
                 
                 <input class="taskTitleInput" type="text" placeholder="Title">
@@ -33,6 +33,15 @@
             
             <button class="addTaskButton" id="addTaskButton" onclick="addTask()"><i class="fa-solid fa-plus fa-lg"></i></button>
 
+        </div>
+        <div class="tasks">
+          <div class="task" onclick="opentask(this)">
+            <i class="fa-solid fa-bookmark fa-rotate-90 taskBookmark" ></i>
+            <div class="taskContents">
+              <p class="taskTitle">Title</p>
+              <p class="taskDots">...</p>
+            </div>
+          </div>
         </div>
     </div>
 	<script src="index.js"></script>
