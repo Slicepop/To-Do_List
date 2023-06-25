@@ -4,6 +4,38 @@
     font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
   }
+  .opaque{
+    position: absolute;
+    background-color: #ffffffe1;
+    width: 100%;
+    opacity: 0;
+    height: 0%;
+    z-index: -1;
+    transition: opacity 1s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh;
+  }
+  .openedTask{
+    width: 400px;
+    height: 400px;
+    margin: 10px;
+    padding: 10px;
+    outline-color: rgba(82, 10, 85, 0.404);
+    outline-style: solid;
+    border-radius: 10px;
+    background-color: #0ce6af;
+  }
+  .fa-xmark{
+    margin-left: 95%;
+    cursor: pointer;
+  }
+  .openedTaskBookmark{
+    margin-right: 70%;
+    margin-top: 20px;
+  }
   body{
     background: #238152;
     background-image: linear-gradient(#000000,#0d311f,#238152,#47e998);
@@ -112,22 +144,29 @@
     margin-right: 80px;
     margin-bottom: 80px;
  }
-.tasks{
+ .tasks {
   margin: 10px;
   padding: 10px;
-  outline-color: rgba(0, 0, 0, 0.404);
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: auto;
+  grid-gap: 10px;
   outline-style: solid;
 }
-.task{
+
+.task {
   width: 100px;
+  height: 120px;
   margin: 10px;
   padding: 10px;
   outline-color: rgba(82, 10, 85, 0.404);
   outline-style: solid;
   border-radius: 10px;
   cursor: pointer;
-  transition: 2s;
+  transition:  2s;
+  grid-row: auto;
 }
+
 .taskBookmark{
   margin-bottom: 20px;
 }
@@ -136,7 +175,6 @@
   place-items: center;
   
 }
-
 .taskDots{
   color: rgb(121, 92, 121);
   font-size: 30px;

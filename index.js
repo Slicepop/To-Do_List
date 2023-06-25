@@ -69,12 +69,22 @@ function addTask() {
     colorSelect.selectedIndex = 0; // Reset to the first option
     changeColor();
   }
-  function opentask(document){
-    document.style.position = "absolute";
-    document.style.background = "white";
-    document.style.height = "450px";
-    document.style.width = "450px";
+
+  var opaque = document.getElementsByClassName("opaque");
+function opentask(element) {
+    
+    opaque[0].style.zIndex = 3;
+    opaque[0].style.transition = 'opacity 1s ease';
+    opaque[0].style.height = "100%";
+    opaque[0].style.opacity = "1";
+}
+function closeOpenedTask(){
+    opaque[0].style.transition = '1s ease';
+    opaque[0].style.zIndex = -1;
+    opaque[0].style.height = "0";
+    opaque[0].style.opacity = "0";
+}
 
 
-  }
+
   
